@@ -1,0 +1,112 @@
+<html>
+<body>
+<style>
+div.signup
+{
+
+width: 200px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #FF2D20;
+    border-radius: 8px; 
+margin:0
+}
+
+.button {
+    background-color: #4CAF50;
+    
+    color: white;
+    padding: 7px 65px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+</style>
+<head>
+<link rel="stylesheet" script type="text/css" href="header-footer.css">
+</head><title>Sport Store</title>
+<body class="header" background="sports.jpg" >
+<div class="header">
+<marquee  style="font-size:40px;color:white">Welcome To Sport Store</marquee>
+<p align="center">
+<a href="index.html"><img src="logo.jpg" alt="Sport Store" style="width:198px;height:178px;"></a>
+</p>
+
+<ul>
+<li><a href="index.html"> Home </a></li>
+  <li class="dropdown">
+    <a class="dropbtn"> Categories </a>
+    <div class="dropdown-content">
+      <a href="Ipl1.html">IPL</a>
+      <a href="Indoor.html">Indoor</a>
+      <a href="Outdoor.html">Outdoor</a>
+    </div>
+  </li>
+  <li><a href="index.html"> Help </a></li>
+
+</ul></div>
+<br><br>
+
+
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name=="")
+{  
+  alert("Enter Your Name");  
+  return false;  
+}
+else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+alert("You have successfully Registered");
+}  
+</script>  
+<body>  
+<div class="signup"> <form name="myform" method="post" action="Checkout.html" onsubmit="return validateform()" >  
+<h1 align="center">Register</h1>
+Enter Your Name <br><input type="text" name="name"><br>  
+Enter a Password <br><input type="password" name="password"><br/> 
+Enter your address <br><textarea></textarea><br><br>
+<input type="submit" class="button" value="Register"> <br><br>
+<input type="checkbox" name="chk">Keep me signed in.<br></div>
+<p>Already registerd? <a href="4.Login.html"> Log In</a></p>
+</form>  
+
+
+<br>
+
+<footer class="footer" >
+<div class="footer" >
+<hr>
+<table cellspacing="25" align="center" >
+<tr style="text-decoration:none;color:#FBFCFC">
+<th align="left">GET TO KNOW US</th>
+<th align="left">CONNECT WITH US</th>
+<th align="left">LET US HELP YOU</th>
+</tr>
+<tr>
+
+<td><a  style="text-decoration:none;color:#FBFCFC" href="About_we.html">About Us</a></td>
+<td><a  style="text-decoration:none;color:#FBFCFC" href="https://www.facebook.com">Facebook</a></td>
+<td><a  style="text-decoration:none;color:#FBFCFC" href="index.html">Your Account</a></td>
+
+</tr>
+<tr>
+<td><a style="text-decoration:none;color:#FBFCFC" href="email.html">Contact Us</a></td>
+<td><a style="text-decoration:none;color:#FBFCFC" href="https://www.instagram.com/?hl=en">Instagram</a></td>
+<td><a style="text-decoration:none;color:#FBFCFC" href="">Help</td>
+</tr>
+</table>
+</div>
+</footer>
+
+</body>
+</html>
